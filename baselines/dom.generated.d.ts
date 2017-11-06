@@ -4815,7 +4815,7 @@ declare var HTMLFontElement: {
 };
 
 interface HTMLFormControlsCollection extends HTMLCollectionBase {
-    namedItem(name: string): HTMLCollection | Element | null;
+    namedItem(name: string): RadioNodeList | Element | null;
 }
 
 declare var HTMLFormControlsCollection: {
@@ -14626,6 +14626,10 @@ declare var HTMLSummaryElement: {
     prototype: HTMLSummaryElement;
     new(): HTMLSummaryElement;
 };
+
+interface RadioNodeList extends NodeList {
+    value: string;
+}
 
 declare type EventListenerOrEventListenerObject = EventListener | EventListenerObject;
 

@@ -1942,5 +1942,17 @@
         "readonly": true,
         "name": "control",
         "type": "HTMLInputElement | null"
+    },
+    {
+        "kind": "interface",
+        "name": "RadioNodeList",
+        "flavor": "DOM",
+        "extends": "NodeList",
+        "properties": [
+            {
+                "name": "value",
+                "type": "string"
+            }
+        ]
     }
 ]
